@@ -17,8 +17,8 @@
     <properties>
         <deploy.target-file>${project.build.directory}/${project.artifactId}-${project.version}.jar</deploy.target-file>    
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
     </properties>
     
     <dependencies>      
@@ -126,8 +126,17 @@
             <version>2.3.0</version>
         </dependency>
     </dependencies>
+    
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <release>11</release>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -142,9 +151,8 @@
             </plugin>
         </plugins>
     </build>
+    
     <profiles>
- 
-       
         <profile>
             <id>build-fatjar</id>
             <properties>
