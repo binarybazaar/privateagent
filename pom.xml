@@ -29,6 +29,8 @@
         <owner.version>1.0.10</owner.version>
         <cache2k.version>1.2.4.Final</cache2k.version>
         <classgraph.version>4.8.98</classgraph.version>
+        <retrofit.version>2.9.0</retrofit.version>
+        <okhttp.version>3.14.9</okhttp.version>
 
         <custom.build.directory>target</custom.build.directory>
     </properties>
