@@ -8,7 +8,7 @@
     
     <packaging>pom</packaging>
     
-    <name>Private Agent - Parent</name>
+    <name>Private Agent</name>
 
     <properties>
         <deploy.target-file>${project.build.directory}/${project.artifactId}-${project.version}.jar</deploy.target-file>    
